@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:background="@drawable/bus_item_selector"
+    android:layout_height="60.0dip" >
+
+    <ImageView
+        android:id="@+id/bus_store_list_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="12dp"
+        android:src="@drawable/bus_ico_buspoint" />
+
+
+    <ImageView
+        android:id="@+id/right_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="12dp"
+        android:src="@drawable/arrow_right_normal" />
+
+    <TextView
+        android:id="@+id/bus_store_title"
+        android:layout_width="wrap_content"
+        android:layout_height="60.0dip"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="16.0dip"
+        android:layout_marginRight="6.0dip"
+        android:gravity="center"
+        android:layout_toRightOf="@id/bus_store_list_image"
+        android:layout_toLeftOf="@id/right_img"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textColor="#2e2e2e"
+        android:textSize="18.0sp" />
+</RelativeLayout>

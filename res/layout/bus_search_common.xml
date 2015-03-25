@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.hua.goddess.widget.SlidingUpPanelLayout
+        xmlns:sothree="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/sliding_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15dp"
+        android:gravity="bottom"
+        sothree:collapsedHeight="55dp"
+        sothree:dragView="@+id/panel_top"
+        sothree:shadowHeight="4dp" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/search_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/search_bg_edit"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <EditText
+                        android:id="@+id/search_text"
+                        android:layout_width="0dp"
+                        android:layout_height="45dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="6.0dip"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:imeOptions="actionSearch"
+                        android:inputType="text"
+                        android:nextFocusLeft="@+id/search_text"
+                        android:nextFocusUp="@+id/search_text"
+                        android:paddingLeft="6.0dip"
+                        android:singleLine="true"
+                        android:textColor="#ff4d4d4d"
+                        android:textColorHint="#ffb5b5b5"
+                        android:textSize="18.0sp" />
+
+                    <ImageButton
+                        android:id="@+id/icon_clear"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center_vertical"
+                        android:background="@null"
+                        android:paddingBottom="2.0dip"
+                        android:paddingLeft="4.0dip"
+                        android:paddingRight="4.0dip"
+                        android:paddingTop="2.0dip"
+                        android:src="@drawable/btn_search_delete"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/icon_search"
+                    android:layout_width="50dp"
+                    android:layout_height="46dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/search_selector" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/bus_help_text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp"
+                android:textColor="#646464"
+                android:textSize="13.3sp" />
+
+            <ListView
+                android:id="@+id/listview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ffffff"
+                android:cacheColorHint="#00000000"
+                android:divider="@color/list_divider"
+                android:fadingEdge="none"
+                android:listSelector="#00000000" >
+            </ListView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#eee"
+            android:clickable="true"
+            android:focusable="false"
+            android:orientation="vertical" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#999999" />
+
+            <LinearLayout
+                android:id="@+id/panel_top"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/panel_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY"
+                    android:gravity="center"
+                    android:src="@drawable/ic_expand_up" />
+
+                <TextView
+                    android:id="@+id/panel_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="我的收藏"
+                    android:gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#676564"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#999999" />
+
+            <LinearLayout
+                android:id="@+id/collect_lin"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical" />
+        </LinearLayout>
+    </com.hua.goddess.widget.SlidingUpPanelLayout>
+
+</RelativeLayout>

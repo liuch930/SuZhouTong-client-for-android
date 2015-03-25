@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical" >
+        
+        <ImageView 
+            android:id="@+id/net_erro_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/net_erro_img"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:id="@+id/net_erro_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#a2a2a2"
+            android:layout_marginTop="18dp"
+            android:textSize="13sp"
+            android:text="@string/no_net" />
+
+        <Button
+            android:id="@+id/reload_btn"
+            android:layout_width="110dp"
+            android:layout_height="40dp"
+            android:background="@drawable/net_erro_btn"
+            android:layout_marginTop="18dp"
+            android:textColor="#fff"
+            android:text="@string/reload" />
+    </LinearLayout>
+
+</RelativeLayout>

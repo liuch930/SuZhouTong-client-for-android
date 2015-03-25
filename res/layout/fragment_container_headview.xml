@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/title_bar"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="10dp"
+    android:background="@color/white" >
+
+    <View
+        android:id="@+id/color_title_line"
+        android:layout_width="fill_parent"
+        android:layout_height="3.8dip"
+        android:background="@color/red" />
+
+    <RelativeLayout
+        android:id="@+id/color_relativeLayout"
+        android:layout_width="118dip"
+        android:layout_height="32dip"
+        android:layout_marginLeft="10dip"
+        android:background="@color/red" >
+
+        <TextView
+            android:id="@+id/auther_smallfon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textColor="#FFFFFF"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/time_smallfont"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/color_relativeLayout"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dip"
+        android:paddingLeft="6dip"
+        android:textColor="@color/light_gray_text"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/news_title_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/color_relativeLayout"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="12dip"
+        android:gravity="center_vertical"
+        android:textColor="@color/new_tex_content"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="wrap_content"
+        android:layout_height="1dip"
+        android:layout_below="@+id/news_title_name"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="12dip"
+        android:background="#ffc7c7c7" />
+
+</RelativeLayout>

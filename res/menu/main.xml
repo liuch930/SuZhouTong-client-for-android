@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.text.text.MainActivity" >
+
+    <item
+        android:id="@+id/action_about"
+        android:icon="@drawable/about_icon"
+        android:orderInCategory="100"
+        android:showAsAction="never|withText"
+        android:title="@string/about_us"/>
+    <item
+        android:id="@+id/action_updata"
+        android:icon="@drawable/update_icon"
+        android:orderInCategory="100"
+        android:showAsAction="never|withText"
+        android:title="@string/updata_text"/>
+
+</menu>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- 顶部菜单 -->
+
+    <com.hua.goddess.widget.ProgressWebView
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="vertical" />
+
+    <LinearLayout
+        android:id="@+id/browser_toolbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/actionbar_back" >
+
+        <ImageButton
+            android:id="@+id/mxx_common_activity_browser_toolbar_btn_back"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/mxx_view_bg_theme"
+            android:scaleType="center"
+            android:src="@drawable/mxx_browser_toolbar_goback" />
+
+        <ImageButton
+            android:id="@+id/mxx_common_activity_browser_toolbar_btn_forward"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/mxx_view_bg_theme"
+            android:scaleType="center"
+            android:src="@drawable/mxx_browser_toolbar_goforward" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="1" >
+
+            <ProgressBar
+                android:id="@+id/progressBar1"
+                style="@style/CustomProgressStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/mxx_common_activity_browser_toolbar_btn_refresh"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/mxx_view_bg_theme"
+            android:scaleType="center"
+            android:src="@drawable/ic_refresh" />
+    </LinearLayout>
+
+</LinearLayout>

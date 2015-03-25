@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="50.0dip"
+    android:background="@drawable/bus_item_selector" >
+
+    <ImageView
+        android:id="@+id/bus_line_detail_content_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10.0dip"
+        android:background="@drawable/bus_ico_buspoint_on_line" />
+
+    <TextView
+        android:id="@+id/bus_line_detail_content_station_name"
+        android:layout_width="wrap_content"
+        android:layout_height="50.0dip"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="10.0dip"
+        android:layout_toRightOf="@id/bus_line_detail_content_img"
+        android:gravity="center_vertical"
+        android:maxWidth="144.0dip"
+        android:textColor="#ff000000"
+        android:textSize="18.0sp" />
+
+    <TextView
+        android:id="@+id/bus_line_detail_content_intime"
+        android:layout_width="wrap_content"
+        android:layout_height="50.0dip"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="8.0dip"
+        android:layout_toRightOf="@id/bus_line_detail_content_station_name"
+        android:gravity="center_vertical"
+        android:textColor="#ffff8022"
+        android:textSize="14.0sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

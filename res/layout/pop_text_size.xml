@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#999999" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dip"
+            android:text="字体大小设置"
+            android:textColor="#676564"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/fontAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView1"
+            android:layout_alignBottom="@+id/textView1"
+            android:layout_toLeftOf="@+id/fontSub"
+            android:text="字号："
+            android:textColor="#676564"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/fontSub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/fontAdd"
+            android:layout_alignBottom="@+id/fontAdd"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:text="18"
+            android:textColor="#676564"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp" >
+
+        <ImageView
+            android:id="@+id/img_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dip"
+            android:src="@drawable/font_subtract" />
+
+        <ImageView
+            android:id="@+id/img_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dip"
+            android:src="@drawable/font_add" />
+
+        <SeekBar
+            android:id="@+id/settings_font"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="15dip"
+            android:layout_toLeftOf="@id/img_2"
+            android:layout_toRightOf="@id/img_1"
+            android:maxHeight="8dp"
+            android:minHeight="8dp"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:progressDrawable="@drawable/seekbar_style"
+            android:thumb="@drawable/set_font_thumb"
+            android:thumbOffset="2dp" />
+    </RelativeLayout>
+
+</LinearLayout>

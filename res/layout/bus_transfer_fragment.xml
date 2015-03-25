@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="65dp" >
+
+        <Button
+            android:id="@+id/bus_switch_start_target"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="3.0dip"
+            android:background="@drawable/gjhc_btn_switch" />
+
+        <Button
+            android:id="@+id/bus_switch_search"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="3.0dip"
+            android:background="@drawable/gjhc_btn_search" />
+
+        <LinearLayout
+            android:id="@+id/bus_switch_2_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4.0dip"
+            android:layout_toLeftOf="@id/bus_switch_search"
+            android:layout_toRightOf="@id/bus_switch_start_target"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2.0dip" >
+
+                <EditText
+                    android:id="@+id/bus_start_edit"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="3.0dip"
+                    android:background="@drawable/gjhc_edit_input"
+                    android:gravity="center_vertical"
+                    android:hint="@string/start_hint"
+                    android:paddingLeft="10.0dip"
+                    android:paddingRight="30.0dip"
+                    android:singleLine="true"
+                    android:textSize="14.0sp" />
+
+                <ImageView
+                    android:id="@+id/bus_start_clear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="7.0dip"
+                    android:visibility="gone"
+                    android:src="@drawable/gjhc_text_clear" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6.0dip" >
+
+                <EditText
+                    android:id="@+id/bus_target_edit"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="3.0dip"
+                    android:background="@drawable/gjhc_edit_input"
+                    android:gravity="center_vertical"
+                    android:hint="@string/end_hint"
+                    android:imeOptions="actionSearch"
+                    android:nextFocusLeft="@id/bus_start_edit"
+                    android:nextFocusUp="@id/bus_start_edit"
+                    android:paddingLeft="10.0dip"
+                    android:paddingRight="30.0dip"
+                    android:selectAllOnFocus="true"
+                    android:singleLine="true"
+                    android:textSize="14.0sp" />
+
+                <ImageView
+                    android:id="@+id/bus_target_clear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="7.0dip"
+                    android:src="@drawable/gjhc_text_clear"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/bus_help_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:textColor="#646464"
+        android:textSize="13.3sp" />
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:cacheColorHint="#00000000"
+        android:divider="@color/list_divider"
+        android:fadingEdge="none"
+        android:listSelector="#00000000" >
+    </ListView>
+
+</LinearLayout>

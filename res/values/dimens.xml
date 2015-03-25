@@ -1,0 +1,37 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="activity_article_img_margin">10dp</dimen>
+    
+    <dimen name="more_bg_item_padding">12.0dip</dimen>
+    
+    <drawable name="actionbar_back">#2c2c2c</drawable>
+    <drawable name="tab_selected">#ffe16b99</drawable>
+    <drawable name="tab_unselected">#33ffffff</drawable>
+    <drawable name="tab_selected_pressed">#ffe23176</drawable>
+    <drawable name="tab_unselected_pressed">#ffe16b99</drawable>
+    <drawable name="tab_selected_focused">#ff000000</drawable>
+    <drawable name="tab_unselected_focused">#22ffffff</drawable>
+
+    <drawable name="button_unpressed">#00000000</drawable>
+    <drawable name="button_pressed">#45000000</drawable>
+
+    <drawable name="view_unpressed">#00000000</drawable>
+    <drawable name="view_pressed">#22000000</drawable>
+    
+    <!-- 轮播 -->
+    <dimen name="lunbo_fontsize">13sp</dimen>
+    <dimen name="viewpager_focusview_paddingleft_size">5dp</dimen>
+    <dimen name="viewpager_focusview_paddingright_size">20dp</dimen>
+    <dimen name="viewpager_focusview_text_padding_font">4dp</dimen>
+
+    
+    <dimen name="ldrawer_drawableSize">50dp</dimen>
+    <dimen name="ldrawer_barSize">18dp</dimen>
+    <dimen name="ldrawer_topBottomBarArrowSize">11dp</dimen>
+    <dimen name="ldrawer_thickness">2dp</dimen>
+    <dimen name="ldrawer_gapBetweenBars">3dp</dimen>
+    <dimen name="ldrawer_middleBarArrowSize">16dp</dimen>
+</resources>

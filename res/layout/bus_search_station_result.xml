@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="5.0dip"
+    android:layout_marginRight="5.0dip"
+    android:layout_marginTop="10.0dip"
+    android:background="@drawable/bus_item_selector"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="30.0dip"
+        android:layout_marginBottom="4.0dip"
+        android:layout_marginLeft="20.0dip"
+        android:layout_marginTop="15.0dip" >
+
+        <TextView
+            android:id="@+id/bus_station_result_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="国际科技园"
+            android:textColor="@color/blue"
+            android:textSize="22.0sp" />
+
+        <TextView
+            android:id="@+id/bus_search_station_result_list_posotion_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="8.0dip"
+            android:layout_toRightOf="@id/bus_station_result_name"
+            android:text="(金鸡湖大道)"
+            android:textColor="@color/blue"
+            android:textSize="16.0sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="25.0dip"
+        android:layout_marginBottom="10.0dip"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginTop="10.0dip">
+
+        <ImageView
+            android:id="@+id/bus_station_result_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8.0dip"
+            android:background="@drawable/bus_ico_position" />
+
+        <TextView
+            android:id="@+id/bus_station_result_canton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8.0dip"
+            android:layout_toRightOf="@id/bus_station_result_img"
+            android:text="吴中区"
+            android:textColor="#ff000000"
+            android:textSize="18.0sp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/disclosure_line"
+        android:scaleType="fitXY" />
+
+</LinearLayout>

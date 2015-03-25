@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="50.0dip"
+    android:background="@drawable/bus_item_selector" >
+
+    <ImageView
+        android:id="@+id/bus_station_detail_content_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="16.0dip"
+        android:background="@drawable/bus_ico_bus_blue" />
+
+    <TextView
+        android:id="@+id/bus_station_line_name"
+        android:layout_width="80.0dip"
+        android:layout_height="50.0dip"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="10.0dip"
+        android:layout_toRightOf="@id/bus_station_detail_content_img"
+        android:gravity="center_vertical"
+        android:text="128"
+        android:textColor="#ff000000"
+        android:textSize="18.0sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/bus_station_text1"
+        android:layout_width="wrap_content"
+        android:layout_height="50.0dip"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="16.0dip"
+        android:layout_toRightOf="@id/bus_station_line_name"
+        android:gravity="center_vertical"
+        android:textColor="#ff000000"
+        android:textSize="18.0sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/bus_station_detail_count"
+        android:layout_width="wrap_content"
+        android:layout_height="50.0dip"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="1.0dip"
+        android:layout_toRightOf="@id/bus_station_text1"
+        android:gravity="center_vertical"
+        android:textColor="#ffff8022"
+        android:textSize="18.0sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/bus_station_text2"
+        android:layout_width="wrap_content"
+        android:layout_height="50.0dip"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="1.0dip"
+        android:layout_toRightOf="@id/bus_station_detail_count"
+        android:gravity="center_vertical"
+        android:text="@string/site"
+        android:textColor="#ff000000"
+        android:textSize="18.0sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

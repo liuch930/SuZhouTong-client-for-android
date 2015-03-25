@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background_tab_pressed">#6633B5E5</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="list_background">#2c2c2c</color>
+    <color name="list_background_pressed">#fa3e36</color>
+    <color name="list_divider">#0e0e0e</color>
+    <color name="blue">#ff57bdeb</color>
+    <color name="balck_color">#ff000000</color>
+    <drawable name="menu_item_focused">#e3e3e3</drawable>
+    <drawable name="menu_item_default">#FFFFFF</drawable>
+    <color name="common_list_divider">#dfdfdf</color>
+    
+    <color name="light_gray_text">#949494</color>
+    <color name="red">#fa3e36</color>
+    <color name="new_tex_content">#676564</color>
+    <color name="menu_bottom_bg">#f9f9f9</color>
+    <!-- 女神 -->
+    <color name="line_gray">#D7D7D7</color>
+    <color name="xingren_bai">#FFFFCD</color>
+    <color name="dark_gray">#ff636363</color>
+    
+    
+    <color name="line_color">#999999</color>
+    <color name="ldrawer_color">#FFFFFF</color>
+    <color name="transparent">#00000000</color>
+    <drawable name="transparent_background">#00000000</drawable>
+</resources>

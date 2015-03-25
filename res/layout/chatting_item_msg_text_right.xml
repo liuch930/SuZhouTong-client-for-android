@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffffff"
+    android:padding="6.0dip" >
+
+    <TextView
+        android:id="@id/tv_chatcontent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10.0dip"
+        android:background="@drawable/chatto_bg"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="left|center"
+        android:lineSpacingExtra="2.0dip"
+        android:minHeight="50.0dip"
+        android:textColor="#ff676564"
+        android:textSize="15.0sp" />
+
+</RelativeLayout>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">苏州通</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="title_activity_content">ContentActivity</string>
+    <string name="title_activity_guide">GuideActivity</string>
+    <string name="title_activity_player">PlayerActivity</string>
+    <string name="title_activity_u">UActivity</string>
+    <string name="title_activity_shots_detail">ShotsDetail</string>
+    <string name="title_activity_choice">ChoiceActivity</string>
+    <string name="title_activity_d">DActivity</string>
+    <string name="cancel">取消</string>
+    <string name="finish">完成</string>
+    <string name="loading">正在加载...</string>
+    <string name="menu_settings">menu_settings</string>
+    <string name="no_sd">SD卡不存在</string>
+    <string name="no_comment">还未有用户评论哦！</string>
+    <string name="press_again_exit">再按一次退出</string>
+    <string name="dialog_search">正在查询</string>
+    <string name="rd_cmlogic_dialog_waiting">请稍后...</string>
+    <string name="no_net_data">数据加载失败,请检查网络！</string>
+    <string name="bus_no_data">暂无可用数据！</string>
+    <!-- error_layout -->
+    <string name="error_msg">抱歉亲，网络连接失败，请稍候再试！</string>
+    <!-- 侧边栏菜单 -->
+    <!-- Nav Drawer Menu Items -->
+    <string-array name="nav_drawer_items">
+        <item>新闻资讯</item>
+        <item>公交助手</item>
+        <item>苏州天气</item>
+        <item>宅男女神</item>
+        <item>私人小秘</item>
+        <item>金山彩票</item>
+    </string-array>
+
+    <array name="nav_drawer_icons">
+        <item>@drawable/ic_pages</item>
+        <item>@drawable/ic_people</item>
+        <item>@drawable/ic_whats_hot</item>
+        <item>@drawable/ic_beauty</item>
+        <item>@drawable/ic_secretary</item>
+        <item>@drawable/school_beauty</item>
+    </array>
+
+    <string name="menuNews">新闻资讯</string>
+    <string name="menuBus">公交助手</string>
+    <string name="menuGoddess">宅男女神</string>
+    <string name="site_hint">请输入站点名称</string>
+    <string name="line_hint">请输入线路名称</string>
+    <string name="start_hint">起始位置</string>
+    <string name="end_hint">结束位置</string>
+    <string name="import_start">请输入起点</string>
+    <string name="import_end">请输入终点</string>
+    <string name="start_null">起点搜索结果为空，建议重新设定</string>
+    <string name="end_null">终点搜索结果为空，建议重新设定</string>
+    <!-- Content Description -->
+    <string name="desc_list_item_icon">Item Icon</string>
+
+    <!-- 公交助手帮助信息 -->
+    <string name="bus_text_line">"1.请在输入框输入公交线路名称,比如:52.\n\n2.线路名称支持模糊查询,可以只输入关键字.\n\n3.系统将会列出所有符合的公交线路供您选择.\n\n4.输入完成以后,点击搜索按钮,就可以得到所有相关线路的列表.\n\n5.点击您需要的线路,进入线路的公交详情."</string>
+    <string name="bus_text_station">"1.请在输入框输入公交站点名称,如：火车站.\n\n2.站点名称支持模糊查询,可以只输入关键字.\n\n3.系统将会列出所有符合的公交站点供您选择,比如：你想查询火车站北广场这个站点,您可以只输入火车.\n\n4.输入完成以后,点击搜索按钮,就可以得到所有相关站台的列表.\n\n5.点击您需要的线路,进入站点的公交详情."</string>
+    <string name="bus_text_switch">"1.请在输入框输入起点和终点名称.\n\n2.如:起点输入汽车站,终点输入观前街.\n\n3.您可以点击相应按钮,对调起点和终点名称.\n\n4.输入完成以后,点击搜索按钮,系统会弹出确认起点和终点的页面.\n\n5.选择您想要的站点后,系统会自动列车符合的公交方案供您选择."</string>
+    <string name="pull_in_site">进站</string>
+    <string name="next_distance">下趟车距离</string>
+    <string name="due_out">待发</string>
+    <string name="next_bus">下趟车</string>
+    <string name="site">站</string>
+    <string name="my_site">我的站点</string>
+    <string name="my_line">我的线路</string>
+    <string name="add_collect">已加入收藏</string>
+    <string name="del_collect">已删除收藏</string>
+    <string name="no_collect">  你还没有收藏哦！</string>
+
+    <!-- 宅男女神 -->
+    <string name="str_xiaoqingxin">小清新</string>
+    <string name="str_xiezhen">美女写真</string>
+    <string name="str_xinggan">性感诱惑</string>
+    <string name="str_youhuo">诱惑写真</string>
+    <string name="str_tiansuchun">甜素纯</string>
+    <string name="str_changtui">长腿诱惑</string>
+    <string name="str_gaoyayoufan">高雅有范</string>
+    <string name="str_xiaohua">校花</string>
+    <string name="str_qizhi">气质美女</string>
+    <string name="str_shishang">时尚美女</string>
+    <string name="str_bijini">比基尼</string>
+    <string name="str_changfa">长发美女</string>
+    <string name="str_chemo">车模名媛</string>
+    <string name="str_wangluomeinv">网络美女</string>
+    <string name="str_gudianmeinv">古典美女</string>
+    <string name="str_feizhuliu">非主流</string>
+    <string name="str_quanbu">全部美女</string>
+    <string name="str_duanfa">短发美女</string>
+    <string name="str_zuqiubaobie">足球宝贝</string>
+    <string name="str_weimei">唯美</string>
+    <string name="str_suyan">素颜</string>
+    <string name="str_keai">可爱</string>
+    <string name="str_luoli">萝莉</string>
+    <string name="str_qingchun">清纯</string>
+    <string name="no_net">联网失败，请重试</string>
+    <string name="reload">重试</string>
+    <string name="about_us">关于我们</string>
+    <string name="updata_text">检测更新</string>
+    <string name="about">&#160;&#160; &#x000A;&#x000D;&#160;&#160;&#160;&#160;本软件安装、下载使用过程中完全免费且无广告，联网所产生的流量费用由网络运营商收取。软件中刊载的所有内容（文字、图片等）均来源于网络，并非本人收集存储，且并不以此牟利，如版权作者对此存在异议请及时与本人联系，本人将妥善处理。本软件免费供大家体验，望在您享受本软件带来的便利的同时尊重软件开发者的合法权益，勿将其用于商业用途。如有意见或建议欢迎与我们联系，谢谢！</string>
+
+     <string-array name="chat_tips">
+        <item>主人，奴婢在此等候多时了</item>
+        <item>主人，近来一切可好</item>
+        <item>亲爱的，我想死你了</item>
+        <item>欢迎归来，我亲爱的主人</item>
+        <item>我是您的私人秘书，很高兴为您服务</item>
+    </string-array>
+</resources>

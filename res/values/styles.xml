@@ -1,0 +1,82 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="SwipeBackLayout">
+        <item name="edge_size">50dip</item>
+        <item name="shadow_left">@drawable/shadow_left</item>
+        <item name="shadow_right">@drawable/shadow_right</item>
+        <item name="shadow_bottom">@drawable/shadow_bottom</item>
+    </style>
+
+    <style name="AnimationPreview2">
+        <item name="android:windowEnterAnimation">@anim/more_in</item>
+        <item name="android:windowExitAnimation">@anim/more_out</item>
+    </style>
+
+    <style name="DetailActivityTheme" parent="android:Theme.Holo.Light.NoActionBar">
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="WindowIsTranslucentTheme">
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="NoTitleDialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowBackground">@drawable/space</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:padding">10dp</item>
+    </style>
+
+    <style name="ChannelItem">
+        <item name="android:paddingLeft">@dimen/more_bg_item_padding</item>
+        <item name="android:paddingRight">@dimen/more_bg_item_padding</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="WelcomeTheme" parent="android:Theme.Light">
+        <item name="android:windowBackground">@drawable/welcomeback</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <!-- 智能聊天 -->
+    <style name="chat_text_date_style">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textColor">#ff676564</item>
+        <item name="android:padding">2.0dip</item>
+    </style>
+
+    <style name="chat_content_date_style">
+        <item name="android:textSize">15.0sp</item>
+        <item name="android:textColor">#ff676564</item>
+        <item name="android:gravity">left|center</item>
+        <item name="android:background">#ffbfbfbf</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:minHeight">50.0dip</item>
+        <item name="android:lineSpacingExtra">2.0dip</item>
+    </style>
+    
+    <style name="CustomProgressStyle" parent="@android:style/Widget.ProgressBar.Large">  
+        <item name="android:minWidth">22dip</item>  
+        <item name="android:maxWidth">22dip</item>  
+        <item name="android:minHeight">22dip</item>  
+        <item name="android:maxHeight">22dip</item>  
+	</style>  
+
+</resources>

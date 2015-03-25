@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:id="@+id/bus_detail_title_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="52.0dip"
+        android:background="@drawable/bus_detail_bg" >
+
+        <ImageView
+            android:id="@+id/bus_detail_favourite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="14.0dip"
+            android:background="@drawable/bus_ico_fav" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="14.0dip" >
+
+            <TextView
+                android:id="@+id/bus_detail_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:singleLine="true"
+                android:text="asdfasd"
+                android:textColor="#ff000000"
+                android:textSize="17.0sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:id="@+id/bus_detail_title_position_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/bus_detail_title"
+                android:layout_below="@id/bus_detail_title" >
+
+                <ImageView
+                    android:id="@+id/bus_detail_position_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="4.0dip"
+                    android:background="@drawable/bus_ico_position" />
+
+                <TextView
+                    android:id="@+id/bus_detail_position_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/bus_detail_position_img"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_toRightOf="@id/bus_detail_position_img"
+                    android:singleLine="true"
+                    android:textColor="#ff5b5d5e"
+                    android:textSize="14.0dip" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view_flag"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:layout_below="@id/bus_detail_title_layout"
+        android:background="@color/white" />
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/bus_detail_list_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/view_flag"
+        android:cacheColorHint="#00000000"
+        android:divider="#19000000"
+        android:dividerHeight="1dp"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:smoothScrollbar="true" />
+
+</RelativeLayout>
